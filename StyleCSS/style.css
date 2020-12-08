@@ -103,7 +103,7 @@ button {
 
 .draw-square:hover {
    animation: visible;
-   animation-duration: 2s;
+   animation-duration: 2.5s;
    animation-iteration-count: 1;
    background: url(../Images/dinosaurs.jpg);
    position: relative;
@@ -111,7 +111,7 @@ button {
 }
 .draw-square1:hover {
     animation: visible;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-iteration-count: 1;
     position: relative;
     background: url(../Images/Friends.jpg);
@@ -119,7 +119,7 @@ button {
 }
 .draw-square2:hover {
     animation: visible;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-iteration-count: 1;
     position: relative;
     background: url(../Images/bad_pack.jpg);
