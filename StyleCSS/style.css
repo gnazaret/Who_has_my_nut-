@@ -66,10 +66,12 @@ button {
     left: calc(100%*2/3);
 }
 .draw-square {
+    background-size: cover;
     margin: auto;
     width: 300px;
     height: 200px;
     background-color: white;
+
     
     
 }
@@ -103,7 +105,7 @@ button {
 
 .draw-square:hover {
    animation: visible;
-   animation-duration: 2.5s;
+   animation-duration: 1s;
    animation-iteration-count: 1;
    background: url(../Images/dinosaurs.jpg);
    position: relative;
@@ -111,7 +113,7 @@ button {
 }
 .draw-square1:hover {
     animation: visible;
-    animation-duration: 2.5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     position: relative;
     background: url(../Images/Friends.jpg);
@@ -119,7 +121,7 @@ button {
 }
 .draw-square2:hover {
     animation: visible;
-    animation-duration: 2.5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     position: relative;
     background: url(../Images/bad_pack.jpg);
