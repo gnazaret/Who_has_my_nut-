@@ -1,4 +1,9 @@
+// alert("You are about to start this game. You'll have to find the nut in order for you to win. If you fail, you are a loser... Good luck!!!");
 
+function myalert() { 
+    alert("You are about to start this game!!\n " + 
+        "You'll have to find the nut hidden behind one of the pictures in order for you to win." + " If you fail, you are a loser"); 
+} 
 const activar_game = false;
 
 const square_posi = ["0", "calc(100%/3)", "calc(100%*2/3)"];
@@ -17,11 +22,6 @@ function empieza(){
    obj.style.display = "none";
     
 }
-
-
-
-  
-
 
 
 $(() => {
@@ -48,18 +48,49 @@ $(() => {
         { name: "badguys3", image: "Images/badguys3.png"}
     ];
     
-
     const $random = () => {
         for(let character of $images) {
             console.log(character);
             const $square = $(".draw-square").css('background', 'url("' + $images[Math.floor(Math.random() * 3)].image + '")');
             const $square2 = $(".draw-square1").css('background', 'url("' + $images2[Math.floor(Math.random() * 3)].image + '")');
             const $square3 = $(".draw-square2").css('background', 'url("' + $images3[Math.floor(Math.random() * 3)].image + '")');
+            $square.css('background-size', "cover");
+            $square2.css('background-size', "cover");
+            $square3.css('background-size', "cover");
+
         }
     }
     // $square.Math.ramdon(url(Images/dinosaurs.jpg), url(Images/Friends.jpg), url(Images/bad_pack.jpg) * 1)
+    
+    // const $nut = $("#nut");
+    // const $container = $(".square-container");
+    // const $randomNut = () => {
+    //     const $nut2 = $container;
+    //     for(let i = 0; i < $container.length; i++){
+    //        console.log(i);
+    //     }
+    //     // $nut = $container[Math.floor(Math.random)() * 3];
+    //     // $nut.prependTo($container);
+  
+    // }
+    
    
+    const $findNut = () => {
+        const $find = Math.floor(Math.random() * 4);
+        console.log($find);
 
+        const $player = prompt("Who Has The Nut?");
+
+        if ($player < $find) {
+            window.alert("Wrong Choice, Keep Trying");
+        } else if ($player > $find) {
+            window.alert("You Are A Loser");
+        } else if ($player == $find){
+            window.alert("YOU FOUND IT..... YOU ARE AWESOME!!!!");
+        }
+
+
+    }
     
     // $(function () {
     //     $(".square").click(function (){
@@ -70,6 +101,9 @@ $(() => {
     $btn.on("click", () => {
         empieza();
         $random();
+        $findNut();
+        // validar_punto();
+        // $randomNut();
 
     })
 
@@ -80,17 +114,17 @@ $(() => {
 
 });
 
-// const ar = document.getElementsByClassName("square");
+// const ar = document.getElementsByClassName("game-container");
 // for(let i = 0; i < ar.length; i++){
 //     ar[i].addEventListener("click", validar_punto,false);
 // }
 
 // function validar_punto(){
-//     if(empezar){
+//     if(empieza){
 //         let obj = this.getElementsByClassName("nut");
 //         alert("You Found It");
 //         obj[0].style.top="-30px";
-//         empezar = false;
+//         empieza = false;
 //     }else{
 //         this.getElementsByClassName("square")[0].style.background = "red";
 //     }
