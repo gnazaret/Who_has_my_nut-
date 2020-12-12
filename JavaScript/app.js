@@ -76,7 +76,7 @@ $(() => {
     
    
     const $findNut = () => {
-        const $find = Math.floor(Math.random() * 4);
+        const $find = Math.floor(Math.random() * (2 +1) + 1);
         console.log($find);
 
         const $player = prompt("Who Has The Nut?");
@@ -86,7 +86,7 @@ $(() => {
         } else if ($player > $find) {
             window.alert("You Are A Loser");
         } else if ($player == $find){
-            window.alert("YOU FOUND IT..... YOU ARE AWESOME!!!!");
+            window.alert("YOU FOUND IT..... YOU ARE A WINNER!!!!");
         }
 
 

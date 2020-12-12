@@ -7,53 +7,42 @@
 
 ## Concept:
 
-A full description of what your project is all about 
+My project is about a kid's game using the ice age theme, where the kids have to help the squirrel (Scrat) to find out where is the hidden nut.
 
 ## Technologies Used:
 
 * HTML
 * CSS
 * JavaScript 
-* External JavaScript Library
+* JQuery
 
 ##### Credits:
 
-    Unsplash.com
-    unDraw.co
-    Slideshow Repo
+   Arthur Bernier
+   Nando Tavarez
+   YouTube
 
 ## Approach:
 
 #### Overview
-Description of how you approach the game development. Here you will add all the development phases, from wireframes to code sample. 
+I started asking my little 11 years old dauhghter about a game, she suggesting creating a game for my little 2 years old where she can find hidden objects. At that time she was watching the Ice Age movie and inmediately I began my pseudocoding. I put all my ideas together and gather some advises from my instructors.
 
 #### Wireframe
 
 <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1601671860/DesignOne_uevwek.png" width="80%" >
 
-Color Pallet:
 
-```
-    #5d5174
-    #9680a4
-    #e2deea
-    #545454
-    #e4e0dd
-    #ffffff
-```
 
 #### User stories
 
-As an user I expect to see a button bla bla bla bla
+As I user, specially a child, will expect to see animations and diffents elements to change colors and positions
 
 #### Development Plan 
 
-description of your development plan 
 
-* Development Plan  ONE
-* Development Plan  Two
-* Development Plan  Three 
-* Development Plan  Four
+
+*  My Development Plan ONE was to create and finish my html and css layout and make sure that all my elements were in the right position and with the desire colors
+* My Development Plan Two was to transform my pseudo code into a real and functional JavaScript/JQuery code, and I believe I did.
 
 #### MVP
 
@@ -64,14 +53,12 @@ description of your development plan
 
 #### Stretch goals
 
-* Stretch goals ONE
-* Stretch goals Two
-* Stretch goals Three 
-* Stretch goals Four
-
+* My Stretch goals ONE is to try to make my divs to randomly shuffle everytime you press the start game button, I know that Arthur told that will be difficult but possible, so I will do it.
+ 
 ## Challenges:
 
-Small description of a challange you faced. 
+Well, I faced a road block trying to make the images to randomly shuffle inside my divs. It took me a lot of hours and a lot of research, but finally one night after 5 1/2 hours I did it (I was up until 1:45am)
+
 
 
 
